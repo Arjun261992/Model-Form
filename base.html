@@ -1,0 +1,25 @@
+
+<!doctype html>
+{% load static %}
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    
+
+    <title>{% block title %} {% endblock title %} | Software Lab!</title>
+    <link href="{% static 'cd/css/bootstrap.min.css' %}" rel="stylesheet" >
+  </head>
+  <body>
+    <div class="container mt-5">
+      <h2 class="text-center alert alert-danger">Function based View Model Form Crud Operations</h2>
+      {% block content %} {% endblock content %}
+    </div>
+     <script src= "{% static 'cd/js/jquery.js' %}"></script>
+     <script src= "{% static 'cd/js/popper.js' %}"></script>
+     <script src= "{% static 'cd/js/bootstrap.min.js' %}"></script>
+  </body>
+  </html>
